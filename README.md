@@ -24,6 +24,8 @@ The quick commerce business model combines the benefits of e-commerce (conductin
 
 ![Market Analysis](image.png)
 
+
+
 The Q-Commerce Industry In India Market size is estimated at USD 3.34 billion in 2024, and is expected to reach USD 9.95 billion by 2029, growing at a CAGR of greater than 4.5% during the forecast period (2024-2029).
 
 In India, the quick commerce market is witnessing a significant growth rate because it provides consumers faster shopping experience than any other e-commerce platform. The reason for the increased adoption of quick commerce platforms is because of the fast and convenient delivery service. The rising urbanization and the trend of online shopping also contribute to the growth of the quick commerce industry in India.
@@ -221,5 +223,8 @@ Utilizing a dynamic graph structure with Disjoint Set data structure enables sca
 ## User community Detection with Girvan Newman Algorithm
 Community detection in dynamic graphs is essential for understanding and analyzing complex networks where nodes and their relationships evolve over time.
 ![Community](Comm.png)
+
+
+
 By identifying cohesive groups or communities within these networks, organizations can gain insights into interconnected user behaviors, preferences, and interactions. 
 This algorithm removes edges with largest edge betweenness (Number of shortest paths passing from the edge) in every iteration. The time complexity of Girvan-Newman’s algorithm increases up to O(m*m*n) on a sparse graph having m edges and n nodes.
