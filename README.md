@@ -134,17 +134,12 @@ Finding the optimum path in an efficient way with fewer operations is crucial fo
 
 
 ![Dijkstra's Algorithm](Dij.gif)
-<em>Figure 1: Dijkstra's Algorithm</em>
-
+<p style="text-align:center;"><em>Figure 1: Dijkstra's Algorithm</em></p>
 
 <br>
 
-
-
 ![A* Search Algorithm](Astar.gif)
-<em>Figure 2: A* Search Algorithm</em>
-
-
+<p style="text-align:center;"><em>Figure 2: A* Search Algorithm</em></p>
 
 
 
