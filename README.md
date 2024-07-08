@@ -211,5 +211,15 @@ The four ways to get there in 7 minutes (which is the shortest calculated time) 
 - 0  4  6
 - 0  1  2  5  6
 - 0  1  3  5  6
+
 As we are using simple dijkstra’s algorithm the time complexity will be O(E*log(V)), where E is number of edges and V is number of Vertices.
 
+## Customer Segments – Dynamic Graph with Disjoint Set based on similarity
+Based on the similarity measure (cosine similarity, hamming similarity) between the User’s data, we can formulate graph representing customer segments, and since the user’s data like preferences are not static, we can use Disjoint Set datastrcture to maintain this “Dynamic Graph”.
+Utilizing a dynamic graph structure with Disjoint Set data structure enables scalable and efficient management of customer segments based on evolving user data, the basic operations of Disjoint set structure Union and Find takes O(alpha(n)) which is nearly constant O(1).
+
+## User community Detection with Girvan Newman Algorithm
+Community detection in dynamic graphs is essential for understanding and analyzing complex networks where nodes and their relationships evolve over time.
+![Community](Comm.png)
+By identifying cohesive groups or communities within these networks, organizations can gain insights into interconnected user behaviors, preferences, and interactions. 
+This algorithm removes edges with largest edge betweenness (Number of shortest paths passing from the edge) in every iteration. The time complexity of Girvan-Newman’s algorithm increases up to O(m*m*n) on a sparse graph having m edges and n nodes.
