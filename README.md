@@ -132,14 +132,21 @@ Finding the optimum path in an efficient way with fewer operations is crucial fo
 
 ### Graphical Illustration: Comparing Dijkstra's Algorithm and A* Search
 
+<div style="text-align:center;">
+
 ![Dijkstra's Algorithm](Dij.gif)
-<p style="text-align:center;"><em>Figure 1: Dijkstra's Algorithm</em></p>
+<p><em>Figure 1: Dijkstra's Algorithm</em></p>
+
+</div>
 
 <br>
 
-![A* Search Algorithm](Astar.gif)
-<p style="text-align:center;"><em>Figure 2: A* Search Algorithm</em></p>
+<div style="text-align:center;">
 
+![A* Search Algorithm](Astar.gif)
+<p><em>Figure 2: A* Search Algorithm</em></p>
+
+</div>
 
 
 The time complexity of A* depends on the quality of the heuristic function. In a worst-case, the algorithm can be O(b^d), where b is the branching factor – the average number of edges from each node, and d is the number of nodes on the resulting path.
