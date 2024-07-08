@@ -178,7 +178,7 @@ The access time complexity to retrieve documents containing keywords from an inv
 ## Range-based Filtering – Segment Trees
 Segment Trees are efficient data structures for applying filters on retrieved database items. They support fast querying, point updates, and range updates with Lazy Propagation. Segment Trees excel in range queries, enabling operations like sum, minimum, maximum, and more over specific ranges of elements.
 
-![Segment Trees](segment.png)
+![Segment Trees](segmentt.png)
 
 This structure enables fast query and update operations with time complexity of O(logn)
 
