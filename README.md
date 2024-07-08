@@ -70,3 +70,25 @@ The search service invokes the Serviceability and ETA service to determine if th
 
 Users are also shown recommendations based on their cart, wishlist, and order history. The orders service caches orders in Redis and stores them in a MySQL database for ACID properties. Payment processing is handled by the "Payment" service, which returns the status of the payment. If successful, the transaction is updated in the MySQL database, a notification is sent to the user via Kafka, and necessary updates are made in the inventory database. The order is then archived in a NoSQL database instead of maintaining all orders in a MySQL cluster.
 
+# Concepts Discussed in Q-Commerce Application Portfolio
+
+This portfolio focuses on discussing various algorithms and data structures relevant to the Blinkit application.
+
+## Concepts Covered
+
+- **Indexing with B+ Trees**
+- **Auto-complete suggestions for search with Trie**
+- **Path finding with A* Search**
+- **Max Flow Problem**
+- **Skip Lists**
+- **Hash Tables**
+- **Full text search - Inverted Indexing**
+- **Range based queries - Segment Trees**
+- **Load balancer - Least Response Time Algorithm**
+- **Assignment Problem**
+- **Dijkstra’s Algorithm**
+- **Disjoint Set**
+- **Girvan Newman Algorithm**
+- **Hashmaps**
+- **Content Filtering Algorithm**
+
