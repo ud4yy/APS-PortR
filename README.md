@@ -198,7 +198,18 @@ Content-based filtering is a crucial algorithm in recommendation systems, levera
 ## Assigning Jobs to Workers – Assignment Problem
 The assignment problem involves assigning jobs to workers to minimize total assignment costs. Using the Branch and Bound algorithm efficiently finds the optimal solution by exploring potential assignments in a prioritized manner, guided by cost estimates. This approach employs intelligent heuristics to prune less promising branches early, ensuring efficient search and solution discovery.
 
-![Segment Trees](assignment.png)
+![Assignment](assignment.png)
 
 This optimization strategy achieves a time complexity of O(M*N) where M is number of jobs and N is number of workers
+
+## Number of ways to arrive to destination – Dijkstra
+In the scenario where a delivery partner needs to determine the number of ways to arrive at a destination with the shortest path, we can use Dijksrta’s algorithm to solve this problem.
+![Ways to Arrive at Destination](ways.png)
+
+The four ways to get there in 7 minutes (which is the shortest calculated time) are:
+- 0  6
+- 0  4  6
+- 0  1  2  5  6
+- 0  1  3  5  6
+As we are using simple dijkstra’s algorithm the time complexity will be O(E*log(V)), where E is number of edges and V is number of Vertices.
 
