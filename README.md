@@ -142,3 +142,18 @@ Finding the optimum path in an efficient way with fewer operations is crucial fo
   <img src="/Astar.gif" alt="A* Search Algorithm" style="display:block; margin:auto;">
 </div>
 
+The time complexity of A* depends on the quality of the heuristic function. In a worst-case, the algorithm can be O(b^d), where b is the branching factor – the average number of edges from each node, and d is the number of nodes on the resulting path.
+
+## Max Flow Problem
+
+![CDN Network](/CDn1.png)
+
+As businesses scale and expand to other continents, consumers from different countries may abandon web pages due to slow load times. To optimize operations for users located globally, Content Delivery Networks (CDNs) are utilized.
+
+The Max Flow Problem is a network flow problem that involves finding the maximum flow possible from a source node to a sink node in a flow network. This concept is highly applicable in optimizing data flow from a main server (source) to various CDNs (sinks) distributed globally.
+
+We can use Ford-Fulkerson’s Algorithm to maximize the material flow in the network. We iteratively develop a residual graph based on which we obtain the augmented path “p”. We add the bottleneck(p) to the overall flow of the modified flow network and repeat this step until no more augmenting paths exist.
+
+Time complexity of this algorithm is O(max_flow * E). We run a loop while there is an augmenting path. In the worst case, we may add 1 unit flow in every iteration, making the time complexity O(max_flow * E).
+
+
