@@ -134,10 +134,11 @@ Finding the optimum path in an efficient way with fewer operations is crucial fo
 
 ### Graphical Illustration: Comparing Dijkstra's Algorithm and A* Search
 
-<center> 
-![Dijkstra's Algorithm](Dij.gif)
+<div>
+  <img src="Dij.gif">
+</div>
+
 <p style="text-align:center;"><em>Figure 1: Dijkstra's Algorithm</em></p>
-</center>
 <br>
 
 ![A* Search Algorithm](Astar.gif)
