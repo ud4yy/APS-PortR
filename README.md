@@ -222,6 +222,8 @@ Utilizing a dynamic graph structure with Disjoint Set data structure enables sca
 
 ## User community Detection with Girvan Newman Algorithm
 Community detection in dynamic graphs is essential for understanding and analyzing complex networks where nodes and their relationships evolve over time.
+
+
 ![Community](Comm.png)
 
 
