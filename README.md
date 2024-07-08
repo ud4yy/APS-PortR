@@ -131,16 +131,9 @@ Searching for a prefix in a Trie has a time complexity of O(p), where p is the l
 Finding the optimum path in an efficient way with fewer operations is crucial for applications where fast delivery is a key feature. The A* (A-star) search algorithm excels in such scenarios by combining the best aspects of Dijkstra's algorithm and heuristic methods to efficiently find the shortest path.
 
 ### Graphical Illustration: Comparing Dijkstra's Algorithm and A* Search
+![Dijkstra](Dij.gif)
+![A star](Astar.gif)
 
-<div style="text-align:center;">
-  <p><strong>Dijkstra's Algorithm</strong></p>
-  <img src="/Dij.gif" alt="Dijkstra's Algorithm" style="display:block; margin:auto;">
-</div>
-
-<div style="text-align:center;">
-  <p><strong>A* Search Algorithm</strong></p>
-  <img src="/Astar.gif" alt="A* Search Algorithm" style="display:block; margin:auto;">
-</div>
 
 The time complexity of A* depends on the quality of the heuristic function. In a worst-case, the algorithm can be O(b^d), where b is the branching factor – the average number of edges from each node, and d is the number of nodes on the resulting path.
 
