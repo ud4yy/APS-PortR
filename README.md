@@ -174,5 +174,17 @@ Inverted indexes are used to store the mapping between terms and the documents i
 
 The access time complexity to retrieve documents containing keywords from an inverted index is O(1).
 
+## Range-based Filtering – Segment Trees
+Segment Trees are efficient data structures for applying filters on retrieved database items. They support fast querying, point updates, and range updates with Lazy Propagation. Segment Trees excel in range queries, enabling operations like sum, minimum, maximum, and more over specific ranges of elements.
+
+![Segment Trees](segment.png)
+
+This structure enables fast query and update operations with time complexity of O(logn)
+
+## Load Balancing Algorithm – Least Response Time
+![Least Response Time](LB.png)
+The Least Response Time algorithm optimizes server load balancing by directing new requests to servers with the quickest historical response times. It dynamically routes incoming requests based on server performance metrics, aiming to minimize response times. Adding or updating a server is efficient with an average time complexity of O(1), while finding the server with the Least Response Time in the worst-case scenario takes O(n).
+
+
 
 
