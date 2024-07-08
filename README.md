@@ -6,10 +6,10 @@ This is a project for the course Algorithmic Problem Solving, introduced by Mr. 
 
 ## Goals of the Portfolio
 
-- **Exploring Design Principles:** Investigate design principles used in robust, scalable solutions.
-- **Advanced Data Structures and Algorithms:** Study advanced data structures and algorithms employed in robust systems.
-- **Optimization and Reliability:** Understand the integration of these elements to optimize performance and ensure reliability in Quick Commerce applications.
-
+- Exploring Design principles used in robust sclable solutions.
+- Explore and study Advanced data structures and algorithms employed in robust systems.
+- Understand integration of these elements to optimize performance and ensure 
+  reliability in Quick Commerce applications.
 ## Introduction to Q-Commerce
 
 Getting products delivered within an hour of ordering was a far-fetched dream a few years ago. But this concept is now becoming part of our reality with companies like Blinkit, Swiggy Instamart, etc., introducing their own quick delivery services. This quick delivery has disrupted the existing market and created a new industry domain for itself – Q-Commerce.
@@ -52,11 +52,11 @@ The project scope does not include payment processing, and our focus does not ex
 
 #### Functional Requirements
 
-- **Search Functionality:** Should provide a search functionality with delivery ETA.
-- **Product Catalog:** Should provide a catalog of all products.
-- **Cart and Wishlist Features:** Should provide Cart and Wishlist features.
-- **Order Processing:** Should handle order processing smoothly.
-- **Order History:** Should provide a view for all previous orders.
+- Should provide a search functionality with delivery ETA.
+- Should provide a catalog of all products.
+- Should provide Cart and Wishlist features.
+- Should handle order processing smoothly.
+- Should provide a view for all previous orders.
 
 #### Non-Functional Requirements
 
