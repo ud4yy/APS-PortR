@@ -156,4 +156,23 @@ We can use Ford-Fulkerson’s Algorithm to maximize the material flow in the net
 
 Time complexity of this algorithm is O(max_flow * E). We run a loop while there is an augmenting path. In the worst case, we may add 1 unit flow in every iteration, making the time complexity O(max_flow * E).
 
+## Data Structures that Power Redis
+
+Redis is a high-performance, in-memory data structures server that enables efficient data storage and retrieval. It communicates over networks using the Redis protocol and employs several key data structures, primarily Skiplists and Hashtables, to power its key-value stores. Hashtables offer O(1) average time complexity for key-based operations, while Skiplists provide O(logn) average complexity for ordered operations.
+
+## Inverted Index - Indexing for Full-Text Search
+
+Unlike traditional search methods that rely on exact word or phrase matches, a full-text search refers to a search of all of the documents' contents within the full-text queries’ range(s) that are relevant. This includes topic, phrasing, citation, or additional text attributes.
+
+A full-text search index is a specialized data structure that enables the fast, efficient searching of large volumes of textual data. To create a full-text search index, each text field of the dataset is analyzed, cleaned, and processed, and finally, the dictionary is created.
+
+![Inverted Index](/invertedInd.png)
+
+Inverted indexes are used to store the mapping between terms and the documents in which they are contained, enabling rapid lookups during searches to optimize the search process.
+
+### Access Time Complexity
+
+The access time complexity to retrieve documents containing keywords from an inverted index is O(1).
+
+
 
