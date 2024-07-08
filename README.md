@@ -80,7 +80,7 @@ This portfolio focuses on discussing various algorithms and data structures rele
 
 - **Indexing with B+ Trees**
 - **Auto-complete suggestions for search with Trie**
-- **Path finding with A* Search**
+- **Path finding with A\* Search**
 - **Max Flow Problem**
 - **Skip Lists**
 - **Hash Tables**
