@@ -35,3 +35,38 @@ Quick commerce is one of the fastest-growing e-commerce platforms that enhances 
 The Indian quick commerce market is competitive. Consumers are increasingly shifting toward quick commerce because of factors such as fast delivery, price, discounts & offers, wide product assortment, availability, and ease of payment. 
 
 The major players in the market include Swiggy Instamart, Blinkit, Dunzo, Big Basket, and Zepto. These players hold more than 80% market share.
+This portfolio focuses on high-level system design, data structures, and algorithms for the Blinkit application.
+
+## Objective
+
+Design a high-level system architecture, identify, and discuss relevant data structures and algorithms used to create robust and scalable solutions.
+
+## Scope of the Project
+The project scope does not include payment processing, and our focus does not extend to low-level design or database schema.
+
+### System Design
+
+![System Design](systemdesign.png)
+
+#### Functional Requirements
+
+- **Search Functionality:** Should provide a search functionality with delivery ETA.
+- **Product Catalog:** Should provide a catalog of all products.
+- **Cart and Wishlist Features:** Should provide Cart and Wishlist features.
+- **Order Processing:** Should handle order processing smoothly.
+- **Order History:** Should provide a view for all previous orders.
+
+#### Non-Functional Requirements
+
+- **Scalability**
+- **Availability**
+- **Consistency**
+
+Inventory is managed by a main NoSQL cluster that holds item details, with updates from vendors coming through Kafka. Various services may need to interact with vendors, collectively referred to as "Inbound Services."
+
+The search service is crucial for efficient operation as it interacts with multiple services and data stores. It provides users with a list of items based on their search using full-text search, which can be implemented with Elastic Search or MongoDB's version. The search results are cached in Redis for quick retrieval later. We will also discuss the feature of search auto-complete in a later part of this portfolio.
+
+The search service invokes the Serviceability and ETA service to determine if the user's location is serviceable. This service uses a database of users and delivery partners, utilizing their “latitude” and “longitude” for location-based filtering. These databases are partitioned using geo-spatial indexing for efficient filtering. Delivery partner locations are continuously updated through Kafka.
+
+Users are also shown recommendations based on their cart, wishlist, and order history. The orders service caches orders in Redis and stores them in a MySQL database for ACID properties. Payment processing is handled by the "Payment" service, which returns the status of the payment. If successful, the transaction is updated in the MySQL database, a notification is sent to the user via Kafka, and necessary updates are made in the inventory database. The order is then archived in a NoSQL database instead of maintaining all orders in a MySQL cluster.
+
