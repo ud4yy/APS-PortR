@@ -1,8 +1,8 @@
-# Portfolio on Q-Commerce Applications: Exploring System Design, Principles, Data Structures, and Algorithms in Blinkit
+# Portfolio on Q-Commerce Applications: Exploring System Design, Principles, Data Structures, and Algorithms.
 
 ![Q-Commerce](Qcomm.png)
 
-This is a project for the course Algorithmic Problem Solving, introduced by Mr. Prakash Hegade at the School of Computer Science and Engineering (SOCSE), KLE Technological University, Hubli.
+This is a project for the course Algorithmic Problem Solving, introduced by Mr. Prakash Hegade, School of Computer Science and Engineering (SOCSE), KLE Technological University, Hubli.
 
 ## Goals of the Portfolio
 
