@@ -92,7 +92,7 @@ This portfolio focuses on discussing various algorithms and data structures rele
 - **Disjoint Set**
 - **Girvan Newman Algorithm**
 - **Hashmaps**
-- **Content Filtering Algorithm**
+- **Content-based Filtering Algorithm**
 
 ## B+ Trees for Secondary Indexing
 
@@ -105,6 +105,7 @@ B-trees are widely used in databases and file systems. They are specialized vari
 ![B+ Tree](/btree.png)
 
 B+ trees are an extension of B-trees that improve upon certain aspects, particularly for database systems. In B+ trees, all record pointers are maintained in the leaf nodes, thereby forming a dense index at the leaf nodes. All the keys are present in the leaf nodes, and their copies may be present in the upper portions of the trees. B+ trees serve best for optimizing retrieval for queries from secondary storage. [3]
+Here is my code: [click here](https://github.com/ud4yy/codes4port/blob/main/code/BpTree.cpp)
 
 ### Searching Efficiency
 
@@ -127,6 +128,7 @@ The above figure illustrates the mechanism of deriving suggestions from the Trie
 ### Complexity
 
 Searching for a prefix in a Trie has a time complexity of O(p), where p is the length of the prefix. Retrieving the top-k terms for a prefix adds a constant time operation of O(k), making the overall complexity for retrieving suggestions O(p + k). [4]
+Here is my code: [click here](https://github.com/ud4yy/codes4port/blob/main/code/Trie.cpp)
 
 ## A* Search for Path Finding
 
@@ -146,7 +148,7 @@ Finding the optimum path in an efficient way with fewer operations is crucial fo
 </div>
 
 The time complexity of A* depends on the quality of the heuristic function. In a worst-case, the algorithm can be O(b^d), where b is the branching factor – the average number of edges from each node, and d is the number of nodes on the resulting path. [5]
-
+Here is my code: [click here](https://github.com/ud4yy/codes4port/blob/main/code/Astar.py)
 ## Max Flow Problem
 
 ![CDN Network](/CDn1.png)
@@ -159,9 +161,12 @@ We can use Ford-Fulkerson’s Algorithm to maximize the material flow in the net
 
 Time complexity of this algorithm is O(max_flow * E). We run a loop while there is an augmenting path. In the worst case, we may add 1 unit flow in every iteration, making the time complexity O(max_flow * E). [6]
 
+Here is my code: [click here](https://github.com/ud4yy/codes4port/blob/main/code/MaxFlow.cpp)
+
 ## Data Structures that Power Redis
 
 Redis is a high-performance, in-memory data structures server that enables efficient data storage and retrieval. It communicates over networks using the Redis protocol and employs several key data structures, primarily Skiplists and Hashtables, to power its key-value stores. Hashtables offer O(1) average time complexity for key-based operations, while Skiplists provide O(logn) average complexity for ordered operations. [7]
+Here is my code: [click here](https://github.com/ud4yy/codes4port/blob/main/code/SkipList.cpp)
 
 ## Inverted Index - Indexing for Full-Text Search
 
@@ -172,6 +177,7 @@ A full-text search index is a specialized data structure that enables the fast, 
 ![Inverted Index](/invertedInd.png)
 
 Inverted indexes are used to store the mapping between terms and the documents in which they are contained, enabling rapid lookups during searches to optimize the search process.
+Here is my code: [click here](https://github.com/ud4yy/codes4port/blob/main/code/InvertedIndex.cpp)
 
 ### Access Time Complexity
 
@@ -184,21 +190,37 @@ Segment Trees are efficient data structures for applying filters on retrieved da
 
 This structure enables fast query and update operations with time complexity of O(logn)
 
+Here is my code: [click here](https://github.com/ud4yy/codes4port/blob/main/code/segmentTree.cpp)
+
 ## Load Balancing Algorithm – Least Response Time
 ![Least Response Time](LB.png)
 The Least Response Time algorithm optimizes server load balancing by directing new requests to servers with the quickest historical response times. It dynamically routes incoming requests based on server performance metrics, aiming to minimize response times. Adding or updating a server is efficient with an average time complexity of O(1), while finding the server with the Least Response Time in the worst-case scenario takes O(n).
 
+Here is my code: [click here](https://github.com/ud4yy/codes4port/blob/main/code/LeastResponsetime.java)
+
 ## Top-k Items Sorted by Price - Heaps
 Heaps are efficient data structures for managing priority-based operations such as sorting. They are particularly useful for scenarios like sorting search results by price. In a Min-Heap, the smallest element (lowest price) is always at the root, making it ideal for retrieving the top-k smallest prices efficiently. Conversely, a Max-Heap can efficiently retrieve the top-k largest prices. Heapifying an array of n elements takes O(n) time, enqueueing n elements in an empty heap takes O(n log n), and fetching the top-k elements takes O(k log n) time complexity. [10]
+
+Here is my code: [click here](https://github.com/ud4yy/codes4port/blob/main/code/priority.cpp)
+
+
+
 
 ## Product Cataloging – Hashmaps
 After fetching product items from a database, organizing them efficiently for presentation on a homepage can be achieved using hashmaps. Each hashmap key represents a category, with the corresponding value being a collection of products belonging to that category. Hashmaps provide average O(1) time complexity for retrieving products by category, ensuring efficient access and organization.
 
+Here is my code: [click here](https://github.com/ud4yy/codes4port/blob/main/code/hashMap.cpp)
+
+
 ## Optimization for Content-Based Filtering for Recommendation
 Content-based filtering is a crucial algorithm in recommendation systems, leveraging deep neural networks to predict user preferences for items based on learned features. To optimize this process, precomputing and storing ||V_u - V_m||^2 in hashmaps reduces runtime inference to O(1) time complexity. This optimization significantly enhances recommendation generation efficiency. [11]
 
+Here is my code: [click here](https://github.com/ud4yy/codes4port/blob/main/code/OptimContentFiltering.py)
+
+
 ## Assigning Jobs to Workers – Assignment Problem
 The assignment problem involves assigning jobs to workers to minimize total assignment costs. Using the Branch and Bound algorithm efficiently finds the optimal solution by exploring potential assignments in a prioritized manner, guided by cost estimates. This approach employs intelligent heuristics to prune less promising branches early, ensuring efficient search and solution discovery. [12]
+
 Here is my code: [Assignment.cpp](https://github.com/ud4yy/codes4port/blob/main/code/Assignment.cpp)
 
 ![Assignment](assignment.png)
@@ -217,9 +239,13 @@ The four ways to get there in 7 minutes (which is the shortest calculated time) 
 
 As we are using simple dijkstra’s algorithm the time complexity will be O(E*log(V)), where E is number of edges and V is number of Vertices.
 
+Here is my code: [click here](https://github.com/ud4yy/codes4port/blob/main/code/Dij.cpp)
 ## Customer Segments – Dynamic Graph with Disjoint Set based on similarity
 Based on the similarity measure (cosine similarity, hamming similarity) between the User’s data, we can formulate graph representing customer segments, and since the user’s data like preferences are not static, we can use Disjoint Set datastrcture to maintain this “Dynamic Graph”.
 Utilizing a dynamic graph structure with Disjoint Set data structure enables scalable and efficient management of customer segments based on evolving user data, the basic operations of Disjoint set structure Union and Find takes O(alpha(n)) which is nearly constant O(1). [14]
+
+Here is my code: [click here](https://github.com/ud4yy/codes4port/blob/main/code/DisjointSet.cpp)
+
 
 ## User community Detection with Girvan Newman Algorithm
 Community detection in dynamic graphs is essential for understanding and analyzing complex networks where nodes and their relationships evolve over time. 
@@ -231,6 +257,9 @@ Community detection in dynamic graphs is essential for understanding and analyzi
 
 By identifying cohesive groups or communities within these networks, organizations can gain insights into interconnected user behaviors, preferences, and interactions. 
 This algorithm removes edges with largest edge betweenness (Number of shortest paths passing from the edge) in every iteration. The time complexity of Girvan-Newman’s algorithm increases up to O(m*m*n) on a sparse graph having m edges and n nodes.
+
+Here is my code: [click here](https://github.com/ud4yy/codes4port/blob/main/code/girVan.py)
+
 
 
 ### References
