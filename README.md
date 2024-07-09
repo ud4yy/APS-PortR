@@ -12,7 +12,7 @@ This is a project for the course Algorithmic Problem Solving, introduced by Mr. 
   reliability in Quick Commerce applications.
 ## Introduction to Q-Commerce
 
-Getting products delivered within an hour of ordering was a far-fetched dream a few years ago. But this concept is now becoming part of our reality with companies like Blinkit, Swiggy Instamart, etc., introducing their own quick delivery services. This quick delivery has disrupted the existing market and created a new industry domain for itself – Q-Commerce.
+Getting products delivered within an hour of ordering was a far-fetched dream a few years ago. But this concept is now becoming part of our reality with companies like Blinkit, Swiggy Instamart, etc., introducing their own quick delivery services. This quick delivery has disrupted the existing market and created a new industry domain for itself – Q-Commerce. [1]
 
 ## How is it Different from E-Commerce?
 
@@ -37,7 +37,7 @@ Quick commerce is one of the fastest-growing e-commerce platforms that enhances 
 The Indian quick commerce market is competitive. Consumers are increasingly shifting toward quick commerce because of factors such as fast delivery, price, discounts & offers, wide product assortment, availability, and ease of payment. 
 
 The major players in the market include Swiggy Instamart, Blinkit, Dunzo, Big Basket, and Zepto. These players hold more than 80% market share.
-This portfolio focuses on high-level system design, data structures, and algorithms for the Blinkit application.
+This portfolio focuses on high-level system design, data structures, and algorithms for the Blinkit application. [2]
 
 ## Objective
 
@@ -104,7 +104,7 @@ B-trees are widely used in databases and file systems. They are specialized vari
 
 ![B+ Tree](/btree.png)
 
-B+ trees are an extension of B-trees that improve upon certain aspects, particularly for database systems. In B+ trees, all record pointers are maintained in the leaf nodes, thereby forming a dense index at the leaf nodes. All the keys are present in the leaf nodes, and their copies may be present in the upper portions of the trees. B+ trees serve best for optimizing retrieval for queries from secondary storage.
+B+ trees are an extension of B-trees that improve upon certain aspects, particularly for database systems. In B+ trees, all record pointers are maintained in the leaf nodes, thereby forming a dense index at the leaf nodes. All the keys are present in the leaf nodes, and their copies may be present in the upper portions of the trees. B+ trees serve best for optimizing retrieval for queries from secondary storage. [3]
 
 ### Searching Efficiency
 
@@ -126,7 +126,7 @@ The above figure illustrates the mechanism of deriving suggestions from the Trie
 
 ### Complexity
 
-Searching for a prefix in a Trie has a time complexity of O(p), where p is the length of the prefix. Retrieving the top-k terms for a prefix adds a constant time operation of O(k), making the overall complexity for retrieving suggestions O(p + k).
+Searching for a prefix in a Trie has a time complexity of O(p), where p is the length of the prefix. Retrieving the top-k terms for a prefix adds a constant time operation of O(k), making the overall complexity for retrieving suggestions O(p + k). [4]
 
 ## A* Search for Path Finding
 
@@ -145,7 +145,7 @@ Finding the optimum path in an efficient way with fewer operations is crucial fo
     </figure>
 </div>
 
-The time complexity of A* depends on the quality of the heuristic function. In a worst-case, the algorithm can be O(b^d), where b is the branching factor – the average number of edges from each node, and d is the number of nodes on the resulting path.
+The time complexity of A* depends on the quality of the heuristic function. In a worst-case, the algorithm can be O(b^d), where b is the branching factor – the average number of edges from each node, and d is the number of nodes on the resulting path. [5]
 
 ## Max Flow Problem
 
@@ -157,17 +157,17 @@ The Max Flow Problem is a network flow problem that involves finding the maximum
 
 We can use Ford-Fulkerson’s Algorithm to maximize the material flow in the network. We iteratively develop a residual graph based on which we obtain the augmented path “p”. We add the bottleneck(p) to the overall flow of the modified flow network and repeat this step until no more augmenting paths exist.
 
-Time complexity of this algorithm is O(max_flow * E). We run a loop while there is an augmenting path. In the worst case, we may add 1 unit flow in every iteration, making the time complexity O(max_flow * E).
+Time complexity of this algorithm is O(max_flow * E). We run a loop while there is an augmenting path. In the worst case, we may add 1 unit flow in every iteration, making the time complexity O(max_flow * E). [6]
 
 ## Data Structures that Power Redis
 
-Redis is a high-performance, in-memory data structures server that enables efficient data storage and retrieval. It communicates over networks using the Redis protocol and employs several key data structures, primarily Skiplists and Hashtables, to power its key-value stores. Hashtables offer O(1) average time complexity for key-based operations, while Skiplists provide O(logn) average complexity for ordered operations.
+Redis is a high-performance, in-memory data structures server that enables efficient data storage and retrieval. It communicates over networks using the Redis protocol and employs several key data structures, primarily Skiplists and Hashtables, to power its key-value stores. Hashtables offer O(1) average time complexity for key-based operations, while Skiplists provide O(logn) average complexity for ordered operations. [7]
 
 ## Inverted Index - Indexing for Full-Text Search
 
 Unlike traditional search methods that rely on exact word or phrase matches, a full-text search refers to a search of all of the documents' contents within the full-text queries’ range(s) that are relevant. This includes topic, phrasing, citation, or additional text attributes.
 
-A full-text search index is a specialized data structure that enables the fast, efficient searching of large volumes of textual data. To create a full-text search index, each text field of the dataset is analyzed, cleaned, and processed, and finally, the dictionary is created.
+A full-text search index is a specialized data structure that enables the fast, efficient searching of large volumes of textual data. To create a full-text search index, each text field of the dataset is analyzed, cleaned, and processed, and finally, the dictionary is created. [8]
 
 ![Inverted Index](/invertedInd.png)
 
@@ -178,7 +178,7 @@ Inverted indexes are used to store the mapping between terms and the documents i
 The access time complexity to retrieve documents containing keywords from an inverted index is O(1).
 
 ## Range-based Filtering – Segment Trees
-Segment Trees are efficient data structures for applying filters on retrieved database items. They support fast querying, point updates, and range updates with Lazy Propagation. Segment Trees excel in range queries, enabling operations like sum, minimum, maximum, and more over specific ranges of elements.
+Segment Trees are efficient data structures for applying filters on retrieved database items. They support fast querying, point updates, and range updates with Lazy Propagation. Segment Trees excel in range queries, enabling operations like sum, minimum, maximum, and more over specific ranges of elements. [9]
 
 ![Segment Trees](segment.png)
 
@@ -189,23 +189,23 @@ This structure enables fast query and update operations with time complexity of 
 The Least Response Time algorithm optimizes server load balancing by directing new requests to servers with the quickest historical response times. It dynamically routes incoming requests based on server performance metrics, aiming to minimize response times. Adding or updating a server is efficient with an average time complexity of O(1), while finding the server with the Least Response Time in the worst-case scenario takes O(n).
 
 ## Top-k Items Sorted by Price - Heaps
-Heaps are efficient data structures for managing priority-based operations such as sorting. They are particularly useful for scenarios like sorting search results by price. In a Min-Heap, the smallest element (lowest price) is always at the root, making it ideal for retrieving the top-k smallest prices efficiently. Conversely, a Max-Heap can efficiently retrieve the top-k largest prices. Heapifying an array of n elements takes O(n) time, enqueueing n elements in an empty heap takes O(n log n), and fetching the top-k elements takes O(k log n) time complexity.
+Heaps are efficient data structures for managing priority-based operations such as sorting. They are particularly useful for scenarios like sorting search results by price. In a Min-Heap, the smallest element (lowest price) is always at the root, making it ideal for retrieving the top-k smallest prices efficiently. Conversely, a Max-Heap can efficiently retrieve the top-k largest prices. Heapifying an array of n elements takes O(n) time, enqueueing n elements in an empty heap takes O(n log n), and fetching the top-k elements takes O(k log n) time complexity. [10]
 
 ## Product Cataloging – Hashmaps
 After fetching product items from a database, organizing them efficiently for presentation on a homepage can be achieved using hashmaps. Each hashmap key represents a category, with the corresponding value being a collection of products belonging to that category. Hashmaps provide average O(1) time complexity for retrieving products by category, ensuring efficient access and organization.
 
 ## Optimization for Content-Based Filtering for Recommendation
-Content-based filtering is a crucial algorithm in recommendation systems, leveraging deep neural networks to predict user preferences for items based on learned features. To optimize this process, precomputing and storing ||V_u - V_m||^2 in hashmaps reduces runtime inference to O(1) time complexity. This optimization significantly enhances recommendation generation efficiency.
+Content-based filtering is a crucial algorithm in recommendation systems, leveraging deep neural networks to predict user preferences for items based on learned features. To optimize this process, precomputing and storing ||V_u - V_m||^2 in hashmaps reduces runtime inference to O(1) time complexity. This optimization significantly enhances recommendation generation efficiency. [11]
 
 ## Assigning Jobs to Workers – Assignment Problem
-The assignment problem involves assigning jobs to workers to minimize total assignment costs. Using the Branch and Bound algorithm efficiently finds the optimal solution by exploring potential assignments in a prioritized manner, guided by cost estimates. This approach employs intelligent heuristics to prune less promising branches early, ensuring efficient search and solution discovery.
+The assignment problem involves assigning jobs to workers to minimize total assignment costs. Using the Branch and Bound algorithm efficiently finds the optimal solution by exploring potential assignments in a prioritized manner, guided by cost estimates. This approach employs intelligent heuristics to prune less promising branches early, ensuring efficient search and solution discovery. [12]
 
 ![Assignment](assignment.png)
 
 This optimization strategy achieves a time complexity of O(M*N) where M is number of jobs and N is number of workers
 
 ## Number of ways to arrive to destination – Dijkstra
-In the scenario where a delivery partner needs to determine the number of ways to arrive at a destination with the shortest path, we can use Dijksrta’s algorithm to solve this problem.
+In the scenario where a delivery partner needs to determine the number of ways to arrive at a destination with the shortest path, we can use Dijksrta’s algorithm to solve this problem. [13]
 ![Ways to Arrive at Destination](ways.png)
 
 The four ways to get there in 7 minutes (which is the shortest calculated time) are:
@@ -218,10 +218,10 @@ As we are using simple dijkstra’s algorithm the time complexity will be O(E*lo
 
 ## Customer Segments – Dynamic Graph with Disjoint Set based on similarity
 Based on the similarity measure (cosine similarity, hamming similarity) between the User’s data, we can formulate graph representing customer segments, and since the user’s data like preferences are not static, we can use Disjoint Set datastrcture to maintain this “Dynamic Graph”.
-Utilizing a dynamic graph structure with Disjoint Set data structure enables scalable and efficient management of customer segments based on evolving user data, the basic operations of Disjoint set structure Union and Find takes O(alpha(n)) which is nearly constant O(1).
+Utilizing a dynamic graph structure with Disjoint Set data structure enables scalable and efficient management of customer segments based on evolving user data, the basic operations of Disjoint set structure Union and Find takes O(alpha(n)) which is nearly constant O(1). [14]
 
 ## User community Detection with Girvan Newman Algorithm
-Community detection in dynamic graphs is essential for understanding and analyzing complex networks where nodes and their relationships evolve over time.
+Community detection in dynamic graphs is essential for understanding and analyzing complex networks where nodes and their relationships evolve over time. 
 
 
 ![Community](Comm.png)
@@ -230,3 +230,37 @@ Community detection in dynamic graphs is essential for understanding and analyzi
 
 By identifying cohesive groups or communities within these networks, organizations can gain insights into interconnected user behaviors, preferences, and interactions. 
 This algorithm removes edges with largest edge betweenness (Number of shortest paths passing from the edge) in every iteration. The time complexity of Girvan-Newman’s algorithm increases up to O(m*m*n) on a sparse graph having m edges and n nodes.
+
+
+### References
+
+1. Mordor Intelligence Research & Advisory. (2024, June). *Quick Commerce Market in India Size & Share Analysis - Growth Trends & Forecasts (2024 - 2029)*. Mordor Intelligence. Retrieved July 9, 2024, from [Mordor Intelligence](https://www.mordorintelligence.com/industry-reports/q-commerce-industry-in-india).
+
+2. Feed Dough. (2024, June). *Quick Commerce Business Model (2024)*. Feed Dough. Retrieved July 9, 2024, from [Feed Dough](https://www.feedough.com/q-commerce-quick-commerce-business-model/).
+
+3. Jensen, C. S., Lin, D., & Ooi, B. C. (2004, August). Query and update efficient B+-tree based indexing of moving objects. In *Proceedings of the Thirtieth international conference on Very large data bases-Volume 30* (pp. 768-779).
+
+4. Connelly, R. H., & Morris, F. L. (1995). A generalization of the trie data structure. *Mathematical structures in computer science, 5*(3), 381-418.
+
+5. Candra, A., Budiman, M. A., & Pohan, R. I. (2021, June). Application of a-star algorithm on pathfinding game. In *Journal of Physics: Conference Series* (Vol. 1898, No. 1, p. 012047). IOP Publishing.
+
+6. Kyi, M. T., & Naing, L. L. (2018). Application of Ford-Fulkerson algorithm to maximum flow in water distribution pipeline network. *International Journal of Scientific and Research Publications, 8*(12), 306-310.
+
+7. Pugh, W. (1990). Skip lists: a probabilistic alternative to balanced trees. *Communications of the ACM, 33*(6), 668-676.
+
+8. Rae, I., Halverson, A., & Naughton, J. F. (2014, March). In-rdbms inverted indexes revisited. In *2014 IEEE 30th International Conference on Data Engineering* (pp. 352-363). IEEE.
+
+9. Chang, Y. K., & Lin, Y. C. (2007). Dynamic segment trees for ranges and prefixes. *IEEE Transactions on Computers, 56*(6), 769-784.
+
+10. Cherkassky, B. V., Goldberg, A. V., & Silverstein, C. (1999). Buckets, heaps, lists, and monotone priority queues. *SIAM Journal on Computing, 28*(4), 1326-1346.
+
+11. Tam, D., Azimi, R., & Jacobsen, H. A. (2003, September). Building content-based publish/subscribe systems with distributed hash tables. In *International Workshop on Databases, Information Systems, and Peer-to-Peer Computing* (pp. 138-152). Berlin, Heidelberg: Springer Berlin Heidelberg.
+
+12. Hahn, P., Grant, T., & Hall, N. (1998). A branch-and-bound algorithm for the quadratic assignment problem based on the Hungarian method. *European Journal of Operational Research, 108*(3), 629-640.
+
+13. Johnson, D. B. (1973). A note on Dijkstra's shortest path algorithm. *Journal of the ACM (JACM), 20*(3), 385-389.
+
+14. Galil, Z., & Italiano, G. F. (1991). Data structures and algorithms for disjoint set union problems. *ACM Computing Surveys (CSUR), 23*(3), 319-344.
+
+15. Despalatović, L., Vojković, T., & Vukicević, D. (2014, May). Community structure in networks: Girvan-Newman algorithm improvement. In *2014 37th international convention on information and communication technology, electronics and microelectronics (MIPRO)* (pp. 997-1002). IEEE.
+
